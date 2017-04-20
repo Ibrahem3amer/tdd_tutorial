@@ -123,3 +123,12 @@
 1492689806581	Marionette	INFO	New connections will no longer be accepted
 [Child 4945] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
 [Child 4945] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492703586273	geckodriver	INFO	Listening on 127.0.0.1:42956
+1492703587281	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.IylmpGtBqZVO
+1492703587283	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1492703587290	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43156
+1492703588733	Marionette	INFO	Listening on port 43156
+1492703590059	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492703593502	Marionette	INFO	New connections will no longer be accepted
+[Child 3575] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 3575] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143

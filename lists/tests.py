@@ -1,4 +1,5 @@
 from django.core.urlresolvers import resolve
+from django.template.loader import render_to_string
 from django.test import TestCase
 from django.http import HttpRequest
 from lists.views import home_page
@@ -13,6 +14,11 @@ class user_vists_homepage(TestCase):
 	def test_home_returns_correct_html(self):
 		request = HttpRequest()
 		response = home_page(request)
-		self.assertTrue(response.content.startswith(b'<html>'))
-		self.assertIn(b'<title>To-Do list</title>', response.content)
-		self.assertTrue(response.content.endswith(b'</html>'))
+		expected = render_to_string('home.html')
+		#decode converts bytes to python unicode string.
+		self.assertEqual(response.content.decode(), expected)
+		'''
+		--> we shouldn't test constants. We checked for behaviour instead. 
+		self.assertTrue(response.content.startswith(b'<!DOCTYPE html>'))
+		self.assertIn(b'<title>To-Do Lists</title>', response.content)
+		self.assertTrue(response.content.endswith(b'</html>'))'''
