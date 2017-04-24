@@ -9,6 +9,9 @@
 			<input type="text" name="item_text" id="id_new_item" placeholder="Enter a to-do item">
 			{% csrf_token %}
 		</form>
+                {% if 1 == 1 %}
+		<h1>Hsha</h1>
+		{% endif %}
 		<table id="id_list_table">
 			<tr><td>1: {{ new_item_text }}</td></tr>
 		</table>
